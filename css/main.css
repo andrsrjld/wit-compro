@@ -103,7 +103,7 @@ ul, li {
 a {
   color: ##E71822;
   cursor: pointer; 
-  color: #272727 !important;
+  /* color: #272727 !important; */
 }
 
 .smooth-scroll {
@@ -122,7 +122,7 @@ a {
 /* 1 Components */
 /* 1.1 buttons / .btn, .btn-line-a */
 .btn {
-  font-size: 1.2rem; }
+  font-size: 0.7rem; }
 
 .btn-line-a {
   color: currentColor;
@@ -1054,7 +1054,7 @@ input[type=text], input[type=password], input[type=email] {
     align-items: center; }
     @media screen and (min-width: 992px) {
       .slide-b .content-top {
-        align-items: flex-start; } }
+        align-items: center; } }
   .slide-b .content-center {
     display: flex;
     align-items: center; }
@@ -1066,7 +1066,9 @@ input[type=text], input[type=password], input[type=email] {
     align-items: center; }
     @media screen and (min-width: 992px) {
       .slide-b .content-bottom {
-        align-items: flex-end; } }
+        margin-bottom: 90px; 
+        font-size: 25px;
+      } }
   .slide-b .slide-text {
     position: relative; }
   .slide-b .slide-image {
@@ -1126,7 +1128,11 @@ input[type=text], input[type=password], input[type=email] {
           transform: none;
   -webkit-filter: none;
           filter: none;
-  opacity: 1; }
+  opacity: 1; 
+  margin-left: 70px;
+  margin-top: 135px;
+  font-size: 85px;  
+}
 
 .swiper-slide-active .slide-b.slide-anim .s-text {
   -webkit-transform: none;
@@ -1312,7 +1318,7 @@ input[type=text], input[type=password], input[type=email] {
   position: fixed;
   bottom: 32px;
   left: 40px;
-  z-index: 10;
+  z-index: 15;
   transition: 0.6s;
   transition-delay: 0.6s; }
 
@@ -1320,14 +1326,14 @@ input[type=text], input[type=password], input[type=email] {
   position: fixed;
   bottom: 32px;
   right: 40px;
-  z-index: 10;
+  z-index: 15;
   transition: 0.6s;
   transition-delay: 0.6s; }
 
 .page-footer .f-social {
   list-style: none;
   font-size: 1.2rem;
-  display: inline-flex;
+  display: block;
   flex-direction: column;
   padding: 0; 
   text-align: center; }
