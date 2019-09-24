@@ -33,10 +33,12 @@ body {
 .section-page .section-header p,
 .section-page .section-content p {
   font-family: "Proxima Nova", "Noto Sans", "Segoe UI", "Opensans", "Roboto", "Helvetica", -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
-  max-width: 40rem; }
+  max-width: 52rem; }
 
 .bg-level-1 {
-  background: #fff; }
+  background: #fff; 
+  padding-bottom: 115px;
+}
 
 .bg-level-2 {
   background: #eaeaea; }
@@ -55,7 +57,8 @@ body {
 /* Title style */
 @media screen and (min-width: 992px) {
   .section-header .h-content {
-    padding-left: 0rem; }
+    right: 152px;
+    padding-left: 0; }
     .section-header .h-content:before {
       display: none; }
     .section-header .h-content h2 {
