@@ -36,8 +36,9 @@ body {
   max-width: 52rem; }
 
 .bg-level-1 {
-  background: #fff; 
-  padding-bottom: 115px;
+  background: #fff;
+  padding-top: 50px;
+  padding-bottom: 150px;
 }
 
 .bg-level-2 {
@@ -181,6 +182,11 @@ body {
     z-index: 1; 
     color: #ffffff;  
   }
+
+  .btn-outline-a .btn-contact {
+    
+  }
+
   .btn-outline-a .icon {
     line-height: 0;
     height: 0.5rem;
@@ -234,3 +240,57 @@ body {
 
 .btn-outline-a.btn-purple {
   color: #9c18ff; }
+
+  .btn-outline-b {
+    border: 5px solid #E71822;
+    border-radius: 0px;
+    background: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;b
+  }
+    .btn-outline-b .text {
+      z-index: 1; 
+      color: #E71822 !important;  
+    }
+  
+    .btn-outline-b .icon {
+      line-height: 0;
+      height: 0.5rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center; }
+      .btn-outline-b .icon > * {
+        font-size: 0.8em; }
+    .btn-outline-b .icon ~ .text {
+      margin-left: 1em; }
+    .btn-outline-b .text ~ .icon {
+      margin-left: 1em; }
+    .btn-outline-b.border-thick {
+      border-width: 3px; }
+      .btn-outline-b.border-thick:before, .btn-outline-a.border-thick:after {
+        border-width: 3px; }
+    .btn-outline-b::before {
+      position: absolute;
+      content: "";
+      top: -1px;
+      bottom: -1px;
+      left: -1px;
+      right: 100%;
+      background: currentColor;
+      transition: 0.3s;
+      opacity: 0.2; }
+    .btn-outline-b:active {
+      opacity: 0.75; }
+    .btn-outline-b:hover {
+      opacity: 0.75; }
+      .btn-outline-b:hover::before {
+        right: -1px; }
