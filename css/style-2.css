@@ -68,7 +68,18 @@ body {
 /* content size */
 .width-medium {
   max-width: 55rem;
-  width: 100%; }
+  width: 100%; 
+}
+
+.width-medium2 {
+  max-width: 100rem;
+  width: 100%;
+  margin-bottom: 27rem;
+  margin-left: 8rem;
+  opacity: 0.1;
+  display: flex !important;
+  z-index: 10 !important; 
+}
 
 @media screen and (min-width: 992px) {
   .section-header .mt-btn {
@@ -181,6 +192,7 @@ body {
   .btn-outline-a .text {
     z-index: 1; 
     color: #ffffff;  
+    -webkit-text-stroke: thin;
   }
 
   .btn-outline-a .btn-contact {
@@ -260,6 +272,7 @@ body {
     .btn-outline-b .text {
       z-index: 1; 
       color: #E71822 !important;  
+      -webkit-text-stroke: thick;
     }
   
     .btn-outline-b .icon {
@@ -293,4 +306,6 @@ body {
     .btn-outline-b:hover {
       opacity: 0.75; }
       .btn-outline-b:hover::before {
-        right: -1px; }
+        right: -1px
+        
+      }
