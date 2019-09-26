@@ -74,7 +74,15 @@ canvas,
 img,
 svg,
 video {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
+
+.video {
+  width: 1366px;
+  height: auto;
+  margin-left: 50vw;
+  transform: translate(-50%);
+}
 
 .browsehappy {
   margin: 0.2em 0;
@@ -1523,6 +1531,23 @@ input[type=text], input[type=password], input[type=email] {
   content: close-quote; }
 
 /* 4.3 Section header and cover / .section-header, .section-cover */
+.content-text .sr-up-2 .text-about{
+  width: 615px !important;
+}
+
+.section-cover-about {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  top: 80px;
+  bottom: 100px;
+}
+
 .section-cover {
   position: absolute;
   top: 0;
@@ -1594,6 +1619,11 @@ input[type=text], input[type=password], input[type=email] {
     @media screen and (min-width: 992px) {
       .section-header .h-content {
         margin-bottom: 3rem; } }
+
+.title-red {
+  color: #E71822 !important;
+}
+
   .section-header .h-title {
     font-size: 1rem;
     line-height: 1.1;
