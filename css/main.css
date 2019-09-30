@@ -78,10 +78,32 @@ video {
 }
 
 .video {
-  width: 1366px;
+  width: 100%;
   height: auto;
   margin-left: 50vw;
   transform: translate(-50%);
+}
+
+.c-video {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.controls {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.player-button button{
+  background: none;
+  border: 0px;
+  outline: 0;
+  cursor: pointer;
 }
 
 .browsehappy {
@@ -266,6 +288,10 @@ input[type=text], input[type=password], input[type=email] {
     font-size: 1rem;
     right: 0.5rem;
     bottom: 0rem; }
+
+.text-uppercase .below-title {
+  color: #E71822;
+}
 
 /* 1.3 Icons / .icon-menu */
 /* Arrow icon */
@@ -787,17 +813,22 @@ input[type=text], input[type=password], input[type=email] {
       right: 0;
       top: auto;
       border-bottom: 2px solid currentColor;
-      opacity: 0.5; }
+      opacity: 0; }
     .item-pricing-a .item-header h3 {
-      font-size: 2.5rem; }
+      font-size: 1.5rem;
+      text-align: center;
+      margin-top: 10px;
+     }
   .item-pricing-a .item-price h4 {
     font-size: 4rem; }
   .item-pricing-a .item-price .sub {
     display: block;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     margin-top: 0.5em;
     font-family: "Proxima Nova", "Noto Sans", "Segoe UI", "Opensans", "Roboto", "Helvetica", -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
-    font-weight: normal; }
+    font-weight: normal; 
+    text-align: justify;
+  }
   .item-pricing-a .item-features {
     list-style: none;
     padding: 0rem;
@@ -2354,6 +2385,10 @@ input[type=text], input[type=password], input[type=email] {
   font-weight: bold;
 }
 
+.font-title-about {
+  font-size: small
+}
+
 .text-primary {
   color: #0094D8 !important; }
 
@@ -2722,4 +2757,10 @@ input[type=text], input[type=password], input[type=email] {
     background-size: 100%;
     /* Keep the image from overlapping sibling elements. */ 
     z-index: -1;
+}
+
+.about-image {
+  display: block;
+    margin-right: auto;
+    margin-left: 45px;
 }

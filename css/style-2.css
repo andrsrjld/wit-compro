@@ -41,6 +41,13 @@ body {
   padding-bottom: 150px;
 }
 
+.bg-level-3 {
+  background: #fff;
+  padding-top: 135px;
+  padding-bottom: 150px;
+  height: 1085px;
+}
+
 .bg-level-2 {
   background: #eaeaea; }
 
@@ -58,7 +65,7 @@ body {
 /* Title style */
 @media screen and (min-width: 992px) {
   .section-header .h-content {
-    right: 152px;
+    right: 160px;
     padding-left: 0; }
     .section-header .h-content:before {
       display: none; }
@@ -267,7 +274,7 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 12px;
-    padding-bottom: 12px;b
+    padding-bottom: 12px;
   }
     .btn-outline-b .text {
       z-index: 1; 
