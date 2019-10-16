@@ -74,7 +74,37 @@ canvas,
 img,
 svg,
 video {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  margin-left: 50vw;
+  transform: translate(-50%);
+}
+
+.c-video {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.controls {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.player-button button{
+  background: none;
+  border: 0px;
+  outline: 0;
+  cursor: pointer;
+}
 
 .browsehappy {
   margin: 0.2em 0;
@@ -97,11 +127,15 @@ iframe {
   border: none; }
 
 ul, li {
-  margin: 0; }
+  margin: 1px; 
+  padding-left: 0px; }
 
 a {
-  color: #0094D8;
-  cursor: pointer; }
+  color: ##E71822;
+  cursor: pointer; 
+  color: #272727 !important;
+}
+
 
 .smooth-scroll {
   scroll-behavior: smooth; }
@@ -111,13 +145,15 @@ a {
 
 * {
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizelegibility; }
+  text-rendering: optimizelegibility; 
+  -webkit-box-sizing: border-box;
+}
 
 /* 0.2 Typography Initializer */
 /* 1 Components */
 /* 1.1 buttons / .btn, .btn-line-a */
 .btn {
-  font-size: 1.2rem; }
+  font-size: 0.7rem; }
 
 .btn-line-a {
   color: currentColor;
@@ -252,6 +288,10 @@ input[type=text], input[type=password], input[type=email] {
     font-size: 1rem;
     right: 0.5rem;
     bottom: 0rem; }
+
+.text-uppercase .below-title {
+  color: #E71822;
+}
 
 /* 1.3 Icons / .icon-menu */
 /* Arrow icon */
@@ -773,17 +813,22 @@ input[type=text], input[type=password], input[type=email] {
       right: 0;
       top: auto;
       border-bottom: 2px solid currentColor;
-      opacity: 0.5; }
+      opacity: 0; }
     .item-pricing-a .item-header h3 {
-      font-size: 2.5rem; }
+      font-size: 1.5rem;
+      text-align: center;
+      margin-top: 10px;
+     }
   .item-pricing-a .item-price h4 {
     font-size: 4rem; }
   .item-pricing-a .item-price .sub {
     display: block;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     margin-top: 0.5em;
     font-family: "Proxima Nova", "Noto Sans", "Segoe UI", "Opensans", "Roboto", "Helvetica", -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
-    font-weight: normal; }
+    font-weight: normal; 
+    text-align: justify;
+  }
   .item-pricing-a .item-features {
     list-style: none;
     padding: 0rem;
@@ -1049,7 +1094,7 @@ input[type=text], input[type=password], input[type=email] {
     align-items: center; }
     @media screen and (min-width: 992px) {
       .slide-b .content-top {
-        align-items: flex-start; } }
+        align-items: center; } }
   .slide-b .content-center {
     display: flex;
     align-items: center; }
@@ -1061,7 +1106,9 @@ input[type=text], input[type=password], input[type=email] {
     align-items: center; }
     @media screen and (min-width: 992px) {
       .slide-b .content-bottom {
-        align-items: flex-end; } }
+        margin-bottom: 90px; 
+        font-size: 25px;
+      } }
   .slide-b .slide-text {
     position: relative; }
   .slide-b .slide-image {
@@ -1121,7 +1168,11 @@ input[type=text], input[type=password], input[type=email] {
           transform: none;
   -webkit-filter: none;
           filter: none;
-  opacity: 1; }
+  opacity: 1; 
+  margin-left: 70px;
+  margin-top: 135px;
+  font-size: 85px;  
+}
 
 .swiper-slide-active .slide-b.slide-anim .s-text {
   -webkit-transform: none;
@@ -1151,8 +1202,10 @@ input[type=text], input[type=password], input[type=email] {
       top: 0;
       left: 0;
       right: 0;
-      padding: 32px 40px;
-      padding-bottom: 0; } }
+      padding: 25px 40px;
+      padding-bottom: 5px; 
+      background-color: #fff;
+    } }
   .navbar-top .navbar-brand {
     display: flex;
     align-items: center;
@@ -1168,7 +1221,7 @@ input[type=text], input[type=password], input[type=email] {
       font-size: 1rem; }
       @media screen and (min-width: 992px) {
         .navbar-top .navbar-brand .text {
-          font-size: 1.25rem; } }
+          font-size: small; } }
       .navbar-top .navbar-brand .text .line {
         display: block;
         line-height: 1; }
@@ -1191,7 +1244,6 @@ input[type=text], input[type=password], input[type=email] {
   .navbar-sidebar:after {
     position: absolute;
     content: "";
-    width: 40px;
     height: 2px;
     top: 50%;
     right: 0;
@@ -1204,13 +1256,12 @@ input[type=text], input[type=password], input[type=email] {
       position: absolute; } }
   @media screen and (min-width: 992px) {
     .navbar-sidebar {
-      position: absolute;
-      top: 32px;
-      left: 40px;
-      padding: 0;
+      position: fixed;
+      top: 350px;
+      left: 35px;
       display: inline-block;
       padding-right: 40px;
-      margin-top: 64px; } }
+      margin-top: 0; } }
   @media screen and (min-width: 1200px) {
     .navbar-sidebar {
       position: fixed; } }
@@ -1223,7 +1274,10 @@ input[type=text], input[type=password], input[type=email] {
     padding: 0 8px;
     line-height: 1;
     position: relative;
-    transition: 0.3s; }
+    transition: 0.3s; 
+    font-size: small; 
+    -webkit-text-stroke: medium;
+  }
     .navbar-sidebar .nav-item:before,
     .navbar-sidebar a:before {
       content: "";
@@ -1237,7 +1291,7 @@ input[type=text], input[type=password], input[type=email] {
               transform: translateY(-50%); }
     .navbar-sidebar .nav-item:hover,
     .navbar-sidebar a:hover {
-      opacity: 0.5;
+      opacity: 0.7;
       text-decoration: none; }
       .navbar-sidebar .nav-item:hover::before,
       .navbar-sidebar a:hover::before {
@@ -1306,7 +1360,7 @@ input[type=text], input[type=password], input[type=email] {
   position: fixed;
   bottom: 32px;
   left: 40px;
-  z-index: 10;
+  z-index: 15;
   transition: 0.6s;
   transition-delay: 0.6s; }
 
@@ -1314,21 +1368,34 @@ input[type=text], input[type=password], input[type=email] {
   position: fixed;
   bottom: 32px;
   right: 40px;
-  z-index: 10;
+  z-index: 15;
   transition: 0.6s;
   transition-delay: 0.6s; }
 
 .page-footer .f-social {
   list-style: none;
-  font-size: 2rem;
-  display: inline-flex;
+  font-size: 1.2rem;
+  display: block;
   flex-direction: column;
-  padding: 0; }
+  padding: 0; 
+  text-align: center; }
   .page-footer .f-social li {
     line-height: 1;
     margin-top: 16px; }
   .page-footer .f-social a {
     color: currentColor; }
+  .page-footer .f-social .fa-whatsapp { 
+    content: "\f232";
+    color: #fff;
+    width: 51.53px;
+    font-size: 2.4rem;
+    height: 51.53px;
+    background: #57BB63;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center !important;
+    padding-top: 5px
+  }
 
 .page-footer .f-text {
   position: absolute;
@@ -1364,10 +1431,9 @@ input[type=text], input[type=password], input[type=email] {
           transform: rotate(180deg);
   padding-top: 64px; }
   .page-footer .f-text-modern::before {
+    opacity: 0%;
     position: absolute;
     content: "";
-    height: 40px;
-    width: 2px;
     top: 0;
     left: 50%;
     background: currentColor;
@@ -1402,6 +1468,12 @@ input[type=text], input[type=password], input[type=email] {
   -webkit-transform: translateY(-64px);
           transform: translateY(-64px);
   transition-delay: 0s; }
+
+.page-footer.scroll-end .footer-left {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2); }
 
 .page-footer.scroll-end .footer-left {
   visibility: hidden;
@@ -1464,9 +1536,11 @@ input[type=text], input[type=password], input[type=email] {
   @media screen and (min-width: 992px) {
     .section-margin {
       padding-top: 6rem;
-      padding-bottom: 6rem; } }
+      padding-bottom: 6rem;
+} }
 
 /* 4.2 Type of Section / .section-page, .section-article */
+
 .section-page .section-header p,
 .section-page .section-content p {
   font-family: "Proxima Nova", "Noto Sans", "Segoe UI", "Opensans", "Roboto", "Helvetica", -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
@@ -1479,7 +1553,7 @@ input[type=text], input[type=password], input[type=email] {
       font-size: 1.4rem; } }
 
 .section-page img {
-  width: 100%; }
+  width: 75%; }
 
 .quote::before {
   content: open-quote; }
@@ -1488,6 +1562,23 @@ input[type=text], input[type=password], input[type=email] {
   content: close-quote; }
 
 /* 4.3 Section header and cover / .section-header, .section-cover */
+.content-text .sr-up-2 .text-about{
+  width: 615px !important;
+}
+
+.section-cover-about {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  top: 80px;
+  bottom: 100px;
+}
+
 .section-cover {
   position: absolute;
   top: 0;
@@ -1496,7 +1587,12 @@ input[type=text], input[type=password], input[type=email] {
   right: 0;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center; 
+  background-image: url(../img/indonesia2.png);
+  background-size: 100%; 
+  top: 80px;
+  bottom: 100px;;
+}
   .section-cover .bg-part {
     min-height: 100%; }
   .section-cover .bg-wrapper {
@@ -1519,8 +1615,8 @@ input[type=text], input[type=password], input[type=email] {
       content: "";
       top: 0%;
       left: 0%;
-      width: 55%;
-      height: 55%; }
+      width: 100%;
+      height: 100%; }
     .section-cover .bg-squares .square-part-2 {
       position: relative;
       content: "";
@@ -1535,9 +1631,8 @@ input[type=text], input[type=password], input[type=email] {
       margin-top: 60%;
       margin-left: 10%;
       left: 0;
-      width: 40%;
-      height: 40%;
-      float: left; }
+      width: 100%;
+      height: 100%; }
     .section-cover .bg-squares .square-part-1 .img-wrapper,
     .section-cover .bg-squares .square-part-2 .img-wrapper,
     .section-cover .bg-squares .square-part-3 .img-wrapper {
@@ -1555,10 +1650,21 @@ input[type=text], input[type=password], input[type=email] {
     @media screen and (min-width: 992px) {
       .section-header .h-content {
         margin-bottom: 3rem; } }
+
+.title-red {
+  color: #E71822 !important;
+}
+
   .section-header .h-title {
-    font-size: 3rem;
+    font-size: 1rem;
     line-height: 1.1;
     position: relative; }
+
+    .section-header .h-title2 {
+      font-size: 1rem;
+      line-height: 1.1;
+      position: relative; }
+
     @media screen and (min-width: 992px) {
       .section-header .h-title {
         font-size: 4rem; } }
@@ -1787,18 +1893,20 @@ input[type=text], input[type=password], input[type=email] {
 /* 5.1 Home page header / .header-home */
 .header-home {
   padding-top: 5rem;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;}
   @media screen and (min-width: 992px) {
     .header-home {
-      padding-top: 6rem;
-      padding-bottom: 6rem; } }
+      padding-top: 0rem;
+      padding-bottom: 6rem; 
+      background-image: url(../img/header-2.png);} }
   .header-home .home-left {
     margin-bottom: 3rem; }
     @media screen and (min-width: 992px) {
       .header-home .home-left {
         margin-bottom: 0;
         padding: 0 2rem;
-        padding-left: 0; } }
+        padding-left: 0; 
+          } }
   .header-home .home-right {
     display: flex;
     flex-direction: column;
@@ -1818,15 +1926,31 @@ input[type=text], input[type=password], input[type=email] {
     @media screen and (min-width: 992px) {
       .header-home .h-title {
         font-size: 4.5rem; } }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 1084px) {
     .header-home .h-title-big {
-      font-size: 6rem;
+      font-size: 4.113rem;
       text-transform: uppercase;
-      line-height: 1; } }
+      line-height: 1;
+      text-align: left; 
+      padding-left: 10rem;
+      width: 800px;
+      height: 100px; }
+      
+      .header-home .h-title-big2 {
+        font-size: 7rem;
+        text-transform: uppercase;
+        line-height: 1;
+        text-align: left; 
+        padding-right: 10rem;
+        width: 800px;
+        height: 100px;
+       }
+    
+    }
   .header-home .h-title-big .decor-line {
     position: relative;
     display: inline-block;
-    padding-left: 1em; }
+    padding-left: 0.8em; }
     .header-home .h-title-big .decor-line::before {
       position: absolute;
       top: 42%;
@@ -1845,12 +1969,26 @@ input[type=text], input[type=password], input[type=email] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap; 
+  padding-left: 450px;
+  width: 1200px;
+  height: 0px;
+  font-size: 0.8rem;
+  padding-bottom: 210px;
+  right: 150px;
+}
 
 .align-y-center {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center; 
+  padding-left: 0px;
+  left: 0px;
+  right: 0px;
+  padding-bottom: 0px;
+  width: 1300px;
+  padding-top: 100px;
+}
 
 .opacity-0 {
   opacity: 0 !important; }
@@ -1868,7 +2006,10 @@ input[type=text], input[type=password], input[type=email] {
   opacity: 0.4 !important; }
 
 .opacity-5 {
-  opacity: 0.5 !important; }
+  opacity: 0.8 !important; 
+  right: 500px;
+  bottom: 125px;
+  }
 
 .opacity-6 {
   opacity: 0.6 !important; }
@@ -2225,7 +2366,7 @@ input[type=text], input[type=password], input[type=email] {
   letter-spacing: 0.1em; }
 
 .fs-normal {
-  font-size: 1.2rem; }
+  font-size: 0.98rem; }
 
 .text-invisible {
   display: none; }
@@ -2238,6 +2379,15 @@ input[type=text], input[type=password], input[type=email] {
 
 .font-title {
   font-family: "Jost*", "Montserrat", "Open Sans", sans-serif; }
+
+.font-title2 {
+  font-family: "LeituraDisplay";
+  font-weight: bold;
+}
+
+.font-title-about {
+  font-size: small
+}
 
 .text-primary {
   color: #0094D8 !important; }
@@ -2485,6 +2635,7 @@ input[type=text], input[type=password], input[type=email] {
 
 /* text stroke */
 .text-stroke {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
   -webkit-text-stroke: 1px #ffffff;
   color: transparent; }
 
@@ -2533,3 +2684,83 @@ input[type=text], input[type=password], input[type=email] {
         left: -0.65em;
         font-size: 6rem;
         opacity: 0.25; } }
+
+.wrap3 {
+  width: 100%;
+  padding: 0px 5rem 5rem 10rem;
+  height: 300px;
+}
+
+.content-bawah .h7 {
+  color: #E71822 !important;
+}
+
+.widget {
+  margin-bottom: 24px;
+  color: #E71822 !important;
+} 
+.widget .h7 {
+  padding-bottom: 5rem;
+}
+
+.widget ul li {
+  display: block;
+  width: 100%;
+  padding-right: 2.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  font-size: 15px;
+
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  grid-row: 7;
+  background: transparent;
+  width: 100px;
+  margin-top: 5px;
+  line-height: 65px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.main-title {
+    /* Display and position the pseudo-element */
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    /* Move the pseudo-element back away from the camera,
+     * then scale it back up to fill the viewport.
+     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+    transform: translateZ(-1px) scale(1.5);
+    /* Force the background image to fill the whole element. */
+    background-size: 100%;
+    /* Keep the image from overlapping sibling elements. */ 
+    z-index: -1;
+}
+
+.about-image {
+  display: block;
+    margin-right: auto;
+    margin-left: 45px;
+}
