@@ -1,0 +1,17 @@
+.section-cover .bg-squares .square-part-3 {
+  position: relative;
+  content: "";
+  margin-top: 60%;
+  margin-left: 10%;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  
+  .section-cover .bg-squares .square-part-3 img {
+    position: absolute;
+    content: "";
+    margin-top: 60%;
+    margin-left: 10%;
+    left: 0;
+    width: 100%;
+    height: 100%; }
