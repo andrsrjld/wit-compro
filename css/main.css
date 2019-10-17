@@ -1323,7 +1323,8 @@ input[type=text], input[type=password], input[type=email] {
   font-size: 2rem;
   display: inline-flex;
   flex-direction: column;
-  padding: 0; }
+  padding: 0;
+  align-items: center; }
   .page-footer .f-social li {
     line-height: 1;
     margin-top: 16px; }
@@ -1413,12 +1414,7 @@ input[type=text], input[type=password], input[type=email] {
   transition-delay: 0s; }
 
 /* 3.4 Page cover / page-cover */
-.page-cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; }
+
 
 /* 4 Sections / .section */
 /* 4.1 Initialization */
