@@ -8,24 +8,79 @@
     src: url(../fonts/SF-Pro-Display-Light.otf);
 }
 
+span {
+    color: #1F2135;
+    font-family: SFProDisplay;
+}
 
-@media (max-width: 1366px) {
+li {
+    color: #1F2135;
+    font-family: SFProDisplay;
+}
 
-    span {
-        color: #1F2135;
-        font-family: SFProDisplay;
-    }
-    
-    li {
-        color: #1F2135;
-        font-family: SFProDisplay;
-    }
-    
-    h2 {
-        color: #1F2135;
-        font-family: SFProDisplay;
-    }
-    
+h2 {
+    color: #1F2135;
+    font-family: SFProDisplay;
+}
+
+span.text.t-upper.fs-normal.d-none.d-md-inline-block {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.93px;
+    line-height: 14px;
+    text-align: left;
+}
+
+span.icon.icon-menu.icon-menu-a {
+    width: 25px;
+}
+
+li.nav-item.t-upper.fs-normal {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.93px;
+    line-height: 14px;
+    text-align: left;
+}
+
+li.social-img {
+    width: 14.79px;
+    height: 14.51px;
+    margin-bottom: 10px;
+}
+
+li.social-img img {
+    width: 100%;
+}
+
+li.social-wa {
+    width: 33.16px;
+    height: 35.16px;
+    background-color: #57BB63;
+    padding-left: 5px;
+    border-radius: 50%;
+}
+
+li.social-wa img {
+    width: 80%;
+    height: auto;
+}
+
+nav.navbar.navbar-top {
+    background-color: #fff;
+}
+
+.header-home {
+    padding-top: 0rem;
+    padding-bottom: 5rem;
+    background-image: url(../img/mobile-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+@media (max-width: 1024px) {
+ 
     .brand-title {
         
         font-family: SFProDisplay;
@@ -36,48 +91,22 @@
         text-align: left;
         text-transform: uppercase;
     }
-    
-    span.text.t-upper.fs-normal.d-none.d-md-inline-block {
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0.93px;
-        line-height: 14px;
+
+    .header-home {
+        padding-top: 0rem;
+        padding-bottom: 5rem;
+        background-image: url(../img/laptop-1024.png);
+        background-repeat: no-repeat;
+    }
+
+    .header-home .h-title-big {
+        font-size: 4.113rem;
+        text-transform: uppercase;
+        line-height: 1;
         text-align: left;
-    }
-    
-    span.icon.icon-menu.icon-menu-a {
-        width: 25px;
-    }
-    
-    li.nav-item.t-upper.fs-normal {
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0.93px;
-        line-height: 14px;
-        text-align: left;
-    }
-    
-    li.social-img {
-        width: 14.79px;
-        height: 14.51px;
-        margin-bottom: 10px;
-    }
-    
-    li.social-img img {
-        width: 100%;
-    }
-    
-    li.social-wa {
-        width: 33.16px;
-        height: 35.16px;
-        background-color: #57BB63;
-        padding-left: 5px;
-        border-radius: 50%;
-    }
-    
-    li.social-wa img {
-        width: 80%;
-        height: auto;
+        padding-left: 1rem;
+        width: 800px;
+        height: 12rem;
     }
     
     .align-y-center {
@@ -88,22 +117,17 @@
         left: 0px;
         right: 0px;
         padding-bottom: 0px;
-        width: 1300px;
+        width: 65rem;
         padding-top: 100px;
-    }
-    
-    .header-home .h-title-big {
-        font-size: 4.113rem;
-        text-transform: uppercase;
-        line-height: 1;
-        text-align: left;
-        padding-left: 10rem;
-        width: 800px;
-        height: 100px;
     }
     
     .width-large {
         max-width: 65rem;
+        width: 100%;
+    }
+
+    .width-medium {
+        max-width: 47rem;
         width: 100%;
     }
     
@@ -114,8 +138,7 @@
     
     h2.h-title.font-title.sr-up-1 {
         font-size: 80px;
-        font-weight: 700;
-        letter-spacing: 6.22px;
+        letter-spacing: 3.22px;
         line-height: 96px;
         text-align: left;
         text-transform: uppercase;
@@ -230,6 +253,14 @@
 
 @media (max-width: 768px) {
 
+    .navbar-top .navbar-brand img {
+        height: 50px;
+    }
+
+    span.text-brand {
+        display: none;
+    }
+
     .section {
         padding-left: 4rem;
         padding-right: 2rem;
@@ -268,6 +299,7 @@
         padding-top: 0rem;
         padding-bottom: 5rem;
         background-image: url(../img/mobile-bg.png);
+        background-repeat: no-repeat;
     }
 
     .header-home img{
@@ -335,8 +367,8 @@
         justify-content: center;
         background-image: url(../img/indo-768.png);
         background-size: 100%;
-        top: 25%;
         bottom: 100px;
+        background-repeat: no-repeat;
     }
 
     .btn.btn-outline-b.bd-thick {
@@ -375,9 +407,28 @@
         flex-direction: column;
         padding-left: 15%;
     }
+
+    .slide-text {
+        color: #FFFFFF;
+        font-family: SFProDisplay-light;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 6.22px;
+        line-height: 25px;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .s-text p{
+        margin-bottom: 2rem;
+    }
 }
 
 @media (max-width: 425px) {
+
+    span.text-brand {
+        display: none;
+    }
 
     .bg-level-1 {
         background: #fff;
@@ -408,6 +459,7 @@
         padding-top: 0rem;
         padding-bottom: 5rem;
         background-image: url(../img/mobile-425.png);
+        background-repeat: no-repeat;
     }
 
     .header-home .h-title-big {
@@ -469,16 +521,15 @@
         justify-content: center;
         background-image: url(../img/indo-425.png);
         background-size: 100%;
-        top: 30%;
+        background-repeat: no-repeat;
     }
 
     .flex-item {
         grid-row: 7;
         background: transparent;
         width: 110px;
-        margin-top: 5px;
+        margin-top: -5px;
         line-height: 65px;
-        color: white;
         font-weight: bold;
         font-size: 3em;
         text-align: center;
@@ -530,4 +581,154 @@
         letter-spacing: 2.58px;
         line-height: 29px;
     }
+
+    .navbar-top .navbar-brand img {
+        height: 40px;
+    }
+
+    .slide-text {
+        color: #FFFFFF;
+        font-family: SFProDisplay-light;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 6.22px;
+        line-height: 25px;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .s-text p{
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .section {
+        padding-left: 2.2rem;
+        padding-right: 2rem;
+    }
+
+    .header-home {
+        padding-top: 0rem;
+        padding-bottom: 5rem;
+        background-image: url(../img/mobile-375.png);
+        background-repeat: no-repeat;
+        padding-left: 10%;
+    }
+
+    .section-cover {
+        top: 5%;
+    }
+
+    .navbar-top .navbar-brand img {
+        height: 35px;
+    }
+
+    span.text-brand {
+        display: none;
+    }
+
+    .slide-text {
+        color: #FFFFFF;
+        font-family: SFProDisplay-light;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 6.22px;
+        line-height: 25px;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .s-text p{
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .header-home {
+        padding-top: 0rem;
+        padding-bottom: 5rem;
+        background-image: url(../img/mobile-320.png);
+        background-repeat: no-repeat;
+        padding-left: 10%;
+    }
+
+    span.width-medium {
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: -1px;
+        line-height: 50px;
+        text-align: left;
+    }
+
+    .section-cover {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../img/indo-320.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    h2.h-title.font-title.sr-up-1 {
+        font-family: SFProDisplay;
+        font-size: 35px;
+        font-weight: 700;
+        letter-spacing: 1.22px;
+        line-height: 40px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .btn.btn-outline-b.bd-thick {
+        cursor: pointer;
+        font-size: 0.2rem;
+        border: 5px solid #E60B16;
+    }
+
+    .content-text.sr-up-2 {
+        color: #1E2134;
+        font-family: SFProDisplay-light;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        line-height: 30px;
+        width: 300px;
+        text-align: left;
+        text-align: justify;
+        margin-bottom: 1rem;
+        padding-right: 55px;
+    }
+
+    .flex-item {
+        grid-row: 7;
+        background: transparent;
+        width: 135px;
+        margin-top: -5px;
+        line-height: 65px;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .slide-text {
+        color: #FFFFFF;
+        font-family: SFProDisplay-light;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 6.22px;
+        line-height: 25px;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .s-text p{
+        margin-bottom: 2rem;
+    }
+}
+
+.section {
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
