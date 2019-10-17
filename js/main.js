@@ -4,7 +4,7 @@ $(document).on('ready', function () {
 	// variables
 	var contextWindow = $(window);
 	var $root = $('html');
-	var siteHeaderFooter = $('.page-footer, .page-header, .page-cover');
+	var siteHeaderFooter = $('.page-footer, .page-header');
 
 	// 1. Background image as data attribut 
 	var list = $('.bg-img');

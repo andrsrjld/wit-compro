@@ -1414,30 +1414,11 @@ input[type=text], input[type=password], input[type=email] {
 
 /* 3.4 Page cover / page-cover */
 .page-cover {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0; }
-  .page-cover .cover-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; }
-  .page-cover .size-full {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; }
-  .page-cover .size-half {
-    top: 0;
-    left: 0;
-    right: 50%;
-    bottom: 0; }
-    .page-cover .size-half.half-right {
-      left: 50%;
-      right: 0; }
 
 /* 4 Sections / .section */
 /* 4.1 Initialization */
