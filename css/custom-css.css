@@ -79,6 +79,194 @@ nav.navbar.navbar-top {
     background-size: cover;
 }
 
+@media (max-width: 1366px) {
+
+    .section-header .h-content {
+        padding-left: 0rem;
+        right: 5.9rem;
+    }
+
+    .section-content {
+        position: relative;
+        z-index: 1;
+        width: 85%;
+        min-height: 100%;
+    }
+ 
+    .brand-title {
+        
+        font-family: SFProDisplay;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.93px;
+        line-height: 14px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .header-home {
+        padding-top: 0rem;
+        padding-bottom: 5rem;
+        background-image: url(../img/laptop-1024.png);
+        background-repeat: no-repeat;
+        background-size: 90%;
+    }
+
+    .header-home .h-title-big {
+        font-size: 5.113rem;
+        text-transform: uppercase;
+        line-height: 1;
+        text-align: left;
+        padding-left: 3rem;
+        width: 800px;
+        height: 15rem;
+    }
+    
+    .align-y-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0px;
+        left: 0px;
+        right: 0px;
+        padding-bottom: 0px;
+        width: 65rem;
+        padding-top: 100px;
+    }
+    
+    .width-large {
+        max-width: 65rem;
+        width: 100%;
+    }
+
+    .width-medium {
+        max-width: 40rem;
+        width: 100%;
+    }
+    
+    img.straight-border {
+        margin-left: -80vh;
+        margin-top: -25vh;
+    }
+    
+    h2.h-title.font-title.sr-up-1 {
+        font-family: sfprodisplay;
+        font-size: 80px;
+        letter-spacing: 3.22px;
+        line-height: 96px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    
+    .bg-level-1 {
+        background: #fff;
+        padding-top: 135px;
+        padding-bottom: 150px;
+    }
+    
+    .section-cover {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../img/indonesia2.png);
+        background-size: 100%;
+        top: 25%;
+        bottom: 100px;
+    }
+    
+    span.text.text-uppercase-below-title {
+        color: #E71822;
+        font-family: SFProDisplay;
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: 1.4px;
+        line-height: 16px;
+        text-align: left;
+    }
+    
+    .content-text.sr-up-2 {
+        color: #1F2135;
+        font-family: SFProDisplay-light;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 1.4px;
+        line-height: 29px;
+        width: 801px;
+        text-align: left;
+    }
+    
+    span.text.text-uppercase {
+        color: #E71822;
+        font-family: SFProDisplay;
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: 1.4px;
+        line-height: 16px;
+        text-align: left;
+    }
+    
+    .flex-container {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        justify-content: left;
+        width: 60rem;
+    }
+    
+    .flex-item {
+        grid-row: 7;
+        background: transparent;
+        width: 130px;
+        margin-top: 5px;
+        line-height: 65px;
+        color: white;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+    }
+    
+    .section-page img {
+        width: 75%;
+    }
+    
+    h2.s-title.font-title {
+        color: #FFFFFF;
+        font-family: SFProDisplay;
+        font-size: 80px;
+        font-weight: 700;
+        letter-spacing: 6.22px;
+        line-height: 96px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    
+    .slide-text {
+        color: #FFFFFF;
+        font-family: SFProDisplay-light;
+        font-size: 36px;
+        font-weight: 300;
+        letter-spacing: 6.22px;
+        line-height: 43px;
+        text-align: left;
+    }
+    
+    .slide-b .content-bottom {
+        align-items: start;
+        left: 5rem;
+    }
+}
+
 @media (max-width: 1280px) {
  
     .brand-title {
