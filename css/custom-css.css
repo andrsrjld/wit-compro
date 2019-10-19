@@ -200,8 +200,10 @@ span.sub {
 
     .section-header .h-content {
         margin-left: 1rem;
+        margin-right: auto;
         margin-bottom: 1rem;
         position: relative;
+        width: auto;
     }
 
     .row {
