@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <!-- saved from url=(0042)http://127.0.0.1:5500/article-style-2.html -->
-<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en" style=""><link type="text/css" id="dark-mode" rel="stylesheet" href="http://127.0.0.1:5500/article-style-2.html"><style type="text/css" id="dark-mode-custom-style"></style><!-- Mirrored from demo.highhay.com/agenci/article-style-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Sep 2019 08:58:31 GMT --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+<html
+  class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"
+  lang="en" style="">
+<link type="text/css" id="dark-mode" rel="stylesheet" href="http://127.0.0.1:5500/article-style-2.html">
+<style type="text/css" id="dark-mode-custom-style"></style>
+<!-- Mirrored from demo.highhay.com/agenci/article-style-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Sep 2019 08:58:31 GMT -->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 
   <!-- Page Title Here -->
   <title>Agenci - Fullscreen website template</title>
 
   <!-- Meta -->
   <!-- Page Description Here -->
-  <meta name="description" content="A beautiful and creative portfolio template. It is mobile friend (responsive) and comes with smooth animations">
+  <meta name="description"
+    content="A beautiful and creative portfolio template. It is mobile friend (responsive) and comes with smooth animations">
 
   <!-- Disable screen scaling-->
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
 
   <!-- Twitter Meta -->
   <meta name="twitter:site" content="@miradontsoa">
@@ -179,7 +189,10 @@
     <div class="section section-cover-image content-white cover-margin cover-small anim" data-section="">
 
       <div class="section-cover  ">
-        <img class="img-block" src="./article-agency_files/img-sample10.jpg" alt="cover" style="display: none;"><div class="img" style="background-image: url(&quot;img/items/img-sample10.jpg&quot;); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
+        <img class="img-block" src="./article-agency_files/img-sample10.jpg" alt="cover" style="display: none;">
+        <div class="img"
+          style="background-image: url(&quot;img/items/img-sample10.jpg&quot;); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+        </div>
       </div>
     </div>
     <!-- End of image section -->
@@ -469,45 +482,46 @@
   <script src="./article-agency_files/main.js.download"></script>
 
 
-<!-- Code injected by live-server -->
-<script type="text/javascript">
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
+  <!-- Code injected by live-server -->
+  <script type="text/javascript">
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+          }
+        }
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+          console.log('Live reload enabled.');
+          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+        }
+      })();
+    } else {
+      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+    // ]]>
+  </script>
 
 
-<!-- Mirrored from demo.highhay.com/agenci/article-style-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Sep 2019 08:58:31 GMT -->
-</body></html>
+  <!-- Mirrored from demo.highhay.com/agenci/article-style-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Sep 2019 08:58:31 GMT -->
+</body>
+
+</html>
