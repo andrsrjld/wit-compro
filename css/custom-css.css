@@ -740,6 +740,16 @@ figure.gallery__item-produk img {
 }
 
 @media (min-width: 1200px) {
+
+    span.text-brand {
+        display: block;
+    }
+
+    .text-brand span{
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
     .section-header .h-content-family {
         margin-bottom: 2rem;
         margin-left: -1rem;
