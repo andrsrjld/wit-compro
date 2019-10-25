@@ -18,7 +18,7 @@ html file
   top: 0;
   left: 0;
   color: #8b8b8b;
-  background: #ffffff;
+  background: #fbfbfb;
   display: block; }
 
 .page-loader .fa {
@@ -28,7 +28,9 @@ html file
 .page-loader.visible {
   transition: 0.6s;
   opacity: 1;
-  visibility: visible; }
+  visibility: visible;
+  background-color: #fbfbfb;
+}
 
 .page-loader.p-hidden {
   visibility: hidden;
