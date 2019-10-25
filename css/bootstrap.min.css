@@ -7254,10 +7254,6 @@ button.bg-dark:hover {
     content: ""
 }
 
-.d-none {
-    display: none !important
-}
-
 .d-inline {
     display: inline !important
 }

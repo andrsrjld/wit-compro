@@ -8,6 +8,10 @@
     src: url(../fonts/SF-Pro-Display-Light.otf);
 }
 
+::-webkit-scrollbar {
+    display: none;
+    }
+
 .media-body {
     cursor: pointer;
 }
