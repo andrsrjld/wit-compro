@@ -1595,9 +1595,7 @@ input[type=email] {
     top: 0;
     left: 0;
     right: 0;
-    padding: 15px 40px;
-    padding-bottom: 0;
-  }
+    padding: 1rem;
 }
 
 .navbar-top .navbar-brand {
@@ -1614,7 +1612,6 @@ input[type=email] {
   .navbar-top .navbar-brand img {
     width: 4rem;
     height: auto;
-    border: 10px solid #ffffff;
   }
 }
 
