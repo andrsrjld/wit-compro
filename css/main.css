@@ -1907,13 +1907,13 @@ input[type=email] {
   transition-delay: 0s;
 }
 
-.page-footer.scrolled .footer-right {
+/* .page-footer.scrolled .footer-right {
   visibility: hidden;
   opacity: 0;
   -webkit-transform: translateY(-64px);
   transform: translateY(-64px);
   transition-delay: 0s;
-}
+} */
 
 .page-footer.scroll-end .footer-left {
   visibility: hidden;
